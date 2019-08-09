@@ -161,7 +161,18 @@
       </plugins>
     </pluginManagement>
   </build>
-
+  <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://13.235.133.52:8081/repository/repository-example/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://13.235.133.52:8081/repository/vp-snap/</url>
+        </snapshotRepository>
+    </distributionManagement>
   <dependencyManagement>
     <dependencies>
       <dependency>
